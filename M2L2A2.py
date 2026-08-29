@@ -1,14 +1,17 @@
 # ---- Set Operations ----
 
-# STEP 1 - Create sets
-morning_subjects = {"Math", "English", "Science", "History"}
-afternoon_subjects = {"Science", "Computer", "Art", "English"}
+# Create a set
+colors = {"Red", "Blue", "Green", "Yellow"}
 
-print("Morning subjects:", morning_subjects)
-print("Afternoon subjects:", afternoon_subjects)
+print("Colors:", colors)
 
-# STEP 2 - Update the set
-morning_subjects.add("Computer")
-morning_subjects.discard("History")
+# Add an item
+colors.add("Purple")
+print("After adding Purple:", colors)
 
-print("\nUpdated morning subjects:", morning_subjects)
+# Remove an item
+colors.discard("Yellow")
+print("After removing Yellow:", colors)
+
+# Find number of items
+print("Total colors:", len(colors))
