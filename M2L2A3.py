@@ -1,19 +1,13 @@
-# ---- Set Operations ----
+# ---- Set Union ----
 
-# STEP 1 - Create two sets
-morning_subjects = {"Math", "English", "Science", "Computer"}
-afternoon_subjects = {"Science", "Computer", "Art", "History"}
+# Create two sets
+morning_activities = {"Reading", "Exercise", "Breakfast"}
+evening_activities = {"Exercise", "Homework", "Dinner"}
 
-print("Morning subjects:", morning_subjects)
-print("Afternoon subjects:", afternoon_subjects)
+print("Morning activities:", morning_activities)
+print("Evening activities:", evening_activities)
 
-# STEP 2 - Set operations
-all_subjects = morning_subjects.union(afternoon_subjects)
-common_subjects = morning_subjects.intersection(afternoon_subjects)
-only_morning = morning_subjects.difference(afternoon_subjects)
-different_subjects = morning_subjects.symmetric_difference(afternoon_subjects)
+# Union of two sets
+all_activities = morning_activities.union(evening_activities)
 
-print("\nAll subjects (union):", all_subjects)
-print("Common subjects (intersection):", common_subjects)
-print("Only in morning (difference):", only_morning)
-print("Not common (symmetric difference):", different_subjects)
+print("\nAll activities:", all_activities)
